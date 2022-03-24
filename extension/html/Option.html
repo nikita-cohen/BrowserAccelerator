@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Browser Accelerator</title>
+    <link rel="stylesheet" href="../css/option.css">
+</head>
+<body>
+<div class="container">
+    <div class="inner-container">
+        <div class="header">Automatic tab suspension</div>
+        <label class="suspend-tabs-after" for="time">Automatically suspend tabs after : </label>
+        <select class="select" name="time" id="time">
+            <option value="0">Never</option>
+            <option value="1">20 seconds</option>
+            <option value="2">1 min</option>
+            <option value="3">5 mins</option>
+            <option value="4">10 mins</option>
+            <option value="5">15 mins</option>
+            <option value="6">30 mins</option>
+            <option value="7">1 hour</option>
+            <option value="8">2 hours</option>
+            <option value="9">4 hours</option>
+            <option value="10">6 hours</option>
+            <option value="11">12 hours</option>
+            <option value="12">1 day</option>
+            <option value="13">2 days</option>
+            <option value="14">3 days</option>
+            <option value="15">1 week</option>
+            <option value="16">2 weeks</option>
+
+        </select>
+        <div>
+            <input name="Never suspend pinned tabs" id="Never-suspend-pinned-tabs" type="checkbox"/>
+            <label for="Never-suspend-pinned-tabs">Never suspend pinned tabs</label>
+        </div>
+        <div>
+            <input name="Never suspend tabs that contain unsaved form inputs" id="Never-suspend-tabs-that-contain-unsaved-form-inputs" type="checkbox"/>
+            <label for="Never-suspend-tabs-that-contain-unsaved-form-inputs">Never suspend tabs that contain unsaved form inputs</label>
+        </div>
+        <div>
+            <input name="Never suspend tabs that are playing audio" id="Never-suspend-tabs-that-are-playing-audio" type="checkbox"/>
+            <label for="Never-suspend-tabs-that-are-playing-audio">Never suspend tabs that are playing audio</label>
+        </div>
+        <div>
+            <input name="Never suspend active tab in each window" id="Never-suspend-active-tab-in-each-window" type="checkbox"/>
+            <label for="Never-suspend-active-tab-in-each-window">Never suspend active tab in each window</label>
+        </div>
+        <div>
+            <input name="Never suspend tabs when connected to power source" id="Never-suspend-tabs-when-connected-to-power-source" type="checkbox"/>
+            <label for="Never-suspend-tabs-when-connected-to-power-source">Never suspend tabs when connected to power source</label>
+        </div>
+        <div>
+            <input name="discard-tab" id="discard-tab" type="checkbox"/>
+            <label for="discard-tab">Freeze tabs using browser native discard method</label>
+        </div>
+
+
+    </div>
+
+</div>
+<script type="text/javascript" src="../js/Option.js"></script>
+</body>
+</html>

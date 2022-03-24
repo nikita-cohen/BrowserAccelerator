@@ -1,0 +1,55 @@
+@font-face {
+    font-family: Helvetica;
+    src: local('Helvetica'), url(../assets/font/Helvetica.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal
+}
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inner-container{
+    display: flex;
+    flex-direction: column;
+}
+
+
+p,
+label {
+    font: 1rem Helvetica, sans-serif;
+}
+
+input {
+    margin-top: 20px;
+}
+
+.header {
+    font-family: Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 50px;
+    cursor: default;
+}
+
+.suspend-tabs-after {
+    margin-top: 20px;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: default;
+}
+
+.select {
+    margin-top: 10px;
+    width: 40%;
+    border: 2px black solid;
+}

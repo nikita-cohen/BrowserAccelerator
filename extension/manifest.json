@@ -1,0 +1,55 @@
+{
+  "name": "Browser Accelerator",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": [
+    "tabs",
+    "storage",
+    "declarativeNetRequest",
+    "gcm",
+    "cookies"
+  ],
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "16": "assets/icon_16.png",
+    "32": "assets/icon_128.png",
+    "64": "assets/icon_128.png",
+    "128": "assets/icon_128.png"
+  },
+  "action": {
+    "default_icon" : "assets/icon_128.png",
+    "default_popup": "./html/Popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "js/userScript.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "all_frames": true
+    }
+  ],
+  "declarative_net_request": {
+    "rule_resources": [{
+      "id": "rules_id_1",
+      "enabled": true,
+      "path": "baRules.json"
+    }]
+  },
+
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "options_page": "html/Option.html",
+  "web_accessible_resources": [
+    {
+      "resources": [ "js/accelerator.js" ],
+      "matches": [ "<all_urls>" ]
+    }
+  ]
+}
